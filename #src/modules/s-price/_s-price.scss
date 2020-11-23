@@ -1,0 +1,52 @@
+.s-price {
+  padding-top: 34px;
+  padding-bottom: 116px;
+
+  background-color: #6738d3;
+  background-image: url("../img/price-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  &__row {
+    @include row-flex();
+  }
+
+  &__col {
+    @include col();
+    @include size(3);
+  }
+
+  &__title {
+    margin-bottom: 24px;
+  }
+
+  &__download {
+    position: relative;
+    padding-right: 20px;
+    font-weight: 400;
+    font-size: 24px;
+    color: #ffffff;
+
+    transition: $base-transition;
+
+    svg {
+      position: absolute;
+      top: 8px;
+      right: 0;
+    }
+
+    &:hover {
+      color: #ffbd28;
+
+      svg {
+        path {
+          stroke: #ffbd28;
+        }
+      }
+    }
+  }
+
+  &__card {
+  }
+}
