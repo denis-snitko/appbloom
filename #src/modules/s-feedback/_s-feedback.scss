@@ -1,0 +1,72 @@
+.s-feedback {
+  padding-top: 97px;
+  padding-bottom: 50px;
+
+  // background-image: url("../img/advantages-bg.png");
+  // background-repeat: no-repeat;
+  // background-position: center 164px;
+  // background-size: 42%;
+
+  &__title {
+    margin-bottom: 20px;
+    color: #3b02ba;
+  }
+
+  &__section-descr {
+    width: 100%;
+    max-width: 475px;
+    margin-bottom: 66px;
+  }
+
+  .flex-justify {
+    justify-content: center;
+  }
+
+  &__form {
+    text-align: center;
+  }
+}
+
+.form {
+  width: 100%;
+  max-width: 710px;
+  padding: 30px 122px;
+
+  background-color: #6738d3;
+
+  border-radius: 10px;
+
+  &__title {
+    margin-bottom: 39px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+
+    color: #ffffff;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 15px;
+  }
+
+  input {
+    width: 100%;
+    padding: 14px 37px;
+
+    font-size: 18px;
+    color: #333333;
+    border: none;
+    border-radius: 10px;
+
+    &::placeholder {
+      opacity: 0.6;
+    }
+  }
+
+  &__base-btn {
+    margin-top: 37px;
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+}
