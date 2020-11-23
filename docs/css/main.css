@@ -1431,4 +1431,33 @@ body {
   padding-left: 50px;
 }
 
+.s-partnership {
+  padding-top: 49px;
+  padding-bottom: 272px;
+  background-image: url("../img/partnership-bg.png");
+  background-repeat: no-repeat;
+  background-position: 962px 68px;
+  background-size: 33%;
+}
+
+.s-partnership__title {
+  margin-bottom: 21px;
+  color: #3b02ba;
+}
+
+.s-partnership__section-descr {
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 23px;
+}
+
+.footer {
+  padding-top: 127px;
+  padding-bottom: 30px;
+  background-image: url("../img/footer-bg.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+
 /* END MAIN STYLES */
