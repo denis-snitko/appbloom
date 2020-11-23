@@ -7,7 +7,7 @@
 
 .main-content {
   flex: 1 1 auto;
-  margin-top: 500px;
+  margin-top: 440px;
 }
 
 .container {
@@ -20,6 +20,28 @@
   line-height: 58px;
 
   color: #ffffff;
+}
+
+.section-descr {
+  line-height: 22px;
+}
+
+.section-list {
+  &__item {
+    margin-bottom: 90px;
+  }
+
+  h3 {
+    margin-bottom: 11px;
+    font-weight: 400;
+    font-size: 24px;
+
+    color: #3b02ba;
+  }
+
+  p {
+    width: 300px;
+  }
 }
 
 .base-btn {

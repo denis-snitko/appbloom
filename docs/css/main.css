@@ -991,7 +991,7 @@ body {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
-  margin-top: 500px;
+  margin-top: 440px;
 }
 
 .container {
@@ -1006,6 +1006,25 @@ body {
   font-size: 48px;
   line-height: 58px;
   color: #ffffff;
+}
+
+.section-descr {
+  line-height: 22px;
+}
+
+.section-list__item {
+  margin-bottom: 90px;
+}
+
+.section-list h3 {
+  margin-bottom: 11px;
+  font-weight: 400;
+  font-size: 24px;
+  color: #3b02ba;
+}
+
+.section-list p {
+  width: 300px;
 }
 
 .base-btn {
@@ -1092,11 +1111,38 @@ body {
   margin-bottom: 18px;
 }
 
-.hero__descr {
+.hero__section-descr {
   width: 383px;
   margin-bottom: 38px;
-  line-height: 22px;
   color: #ffffff;
+}
+
+.s-possibility {
+  padding-top: 68px;
+  padding-bottom: 58px;
+  background-image: url("../img/possibility-bg.png");
+  background-repeat: no-repeat;
+  background-position: center 277px;
+  background-size: 30%;
+}
+
+.s-possibility__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.s-possibility__title {
+  margin-bottom: 21px;
+  color: #3b02ba;
+}
+
+.s-possibility__section-descr {
+  width: 580px;
+  margin-bottom: 76px;
 }
 
 /* END MAIN STYLES */
