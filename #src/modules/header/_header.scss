@@ -1,2 +1,35 @@
 .header {
+  position: relative;
+  z-index: 3;
+  padding: 14px 0;
+  // background-color: #3b02ba;
+
+  &__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.menu {
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    margin-left: 25px;
+    font-weight: 700;
+    line-height: 22px;
+
+    color: #ffffff;
+  }
+
+  &__link {
+    color: inherit;
+    transition: $base-transition;
+
+    &:hover {
+      color: #ffbd28;
+    }
+  }
 }

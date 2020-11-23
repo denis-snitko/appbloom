@@ -7,8 +7,34 @@
 
 .main-content {
   flex: 1 1 auto;
+  margin-top: 500px;
 }
 
 .container {
   @include container();
+}
+
+.section-title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 58px;
+
+  color: #ffffff;
+}
+
+.base-btn {
+  padding: 17px 24px;
+  font-weight: 700;
+  font-size: 14px;
+  color: #ffffff;
+  background-color: #ffbd28;
+  border: 1px solid #ffbd28;
+  border-radius: 25px;
+
+  transition: $base-transition;
+
+  &:hover {
+    color: #ffbd28;
+    background-color: transparent;
+  }
 }

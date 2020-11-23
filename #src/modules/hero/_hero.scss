@@ -1,0 +1,27 @@
+.hero {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 544px;
+  padding-top: 86px;
+  color: #ffffff;
+  background-image: url("../img/header-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  &__title {
+    max-width: 760px;
+    margin-top: 30px;
+    margin-bottom: 18px;
+  }
+
+  &__descr {
+    width: 383px;
+    margin-bottom: 38px;
+    line-height: 22px;
+
+    color: #ffffff;
+  }
+}
