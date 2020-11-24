@@ -41,6 +41,15 @@ burgerClose.addEventListener('click', () => {
 })
 
 
+//MODAL-THANKS
+
+const modalThanks = document.querySelector('.modal-thanks');
+const closeThanks = document.querySelector('.modal-thanks__base-btn');
+closeThanks.addEventListener('click', () => {
+  modalThanks.setAttribute('style', 'display: none')
+})
+
+
 // SMOOTH SCROLL
 const anchors = document.querySelectorAll('a[href*="#"]')
 

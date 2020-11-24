@@ -281,3 +281,32 @@
     text-align: center;
   }
 }
+
+.modal-thanks {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  min-height: 100%;
+
+  text-align: center;
+
+  background-color: rgba(0, 0, 0, 0.42);
+
+  transform: translate(-50%, -50%);
+
+  &__body {
+    padding: 30px;
+    background-color: #6738d3;
+    border-radius: 10px;
+  }
+  &__title {
+    margin-bottom: 20px;
+    font-size: 22px;
+    color: #ffffff;
+  }
+}
