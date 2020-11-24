@@ -38,7 +38,7 @@ burgerOpen.addEventListener('click', () => {
 })
 
 burgerClose.addEventListener('click', () => {
-  burger.setAttribute('style', 'top: -1000%')
+  burger.setAttribute('style', 'top: -10000%')
   document.body.setAttribute('style', 'overflow:  auto')
 })
 
@@ -65,7 +65,7 @@ for (let anchor of anchors) {
       behavior: 'smooth',
       block: 'start'
     })
-    burger.setAttribute('style', 'top: -1000%')
+    burger.setAttribute('style', 'top: -10000%')
     document.body.setAttribute('style', 'overflow:  auto')
   })
 }
