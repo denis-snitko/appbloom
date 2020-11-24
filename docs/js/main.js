@@ -1,6 +1,20 @@
 let swiper = new Swiper('.swiper-container', {
-  slidesPerView: 3,
-  spaceBetween: 100,
+  slidesPerView: 1,
+  grabCursor: true,
+  spaceBetween: 0,
+
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 40,
+    },
+    992: {
+      slidesPerView: 3,
+      spaceBetween: 100,
+    }
+  },
+
+  dynamicMainBullets: 01,
 
   pagination: {
     el: '.swiper-pagination',
@@ -27,7 +41,7 @@ burgerClose.addEventListener('click', () => {
 })
 
 
-
+// SMOOTH SCROLL
 const anchors = document.querySelectorAll('a[href*="#"]')
 
 for (let anchor of anchors) {
