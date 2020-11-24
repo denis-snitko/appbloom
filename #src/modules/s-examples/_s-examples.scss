@@ -63,7 +63,23 @@
     top: 26%;
   }
 
+  .swiper-pagination-fraction {
+    position: relative;
+    font-size: 0;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 2px;
+      height: 80px;
+      background-color: #ffffff;
+      transform: rotate(30deg);
+    }
+  }
+
   .swiper-pagination-current {
+    position: absolute;
+    top: -10px;
+    left: 5px;
     font-weight: 700;
     font-size: 64px;
 
@@ -71,6 +87,9 @@
   }
 
   .swiper-pagination-total {
+    position: absolute;
+    top: 38px;
+    right: 18px;
     font-weight: 700;
     font-size: 36px;
     color: #ffffff;
