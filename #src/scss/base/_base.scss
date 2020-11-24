@@ -106,3 +106,47 @@
     }
   }
 }
+
+.menu {
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    margin-left: 25px;
+    font-weight: 700;
+    line-height: 22px;
+
+    color: #ffffff;
+  }
+
+  &__link {
+    &:hover {
+      color: #ffbd28;
+    }
+  }
+}
+
+.social {
+  &__link {
+    margin-left: 25px;
+
+    &:hover svg path {
+      fill: #ffbd28;
+    }
+  }
+}
+
+.copyright {
+  margin-top: 65px;
+
+  font-weight: 700;
+  font-size: 14px;
+  color: #ffffff;
+
+  a {
+    &:hover {
+      color: #ffbd28;
+    }
+  }
+}
