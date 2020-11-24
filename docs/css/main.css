@@ -1419,6 +1419,7 @@ body {
 }
 
 .s-examples .swiper-slide img {
+  width: 100%;
   border-radius: 20px;
 }
 
@@ -1690,6 +1691,7 @@ body {
 
   .s-examples .swiper-slide img {
     display: block;
+    width: auto;
     margin: 0 auto;
   }
 

@@ -29,10 +29,12 @@
 
   .swiper-slide {
     img {
+      width: 100%;
       border-radius: 20px;
 
       @include md-block() {
         display: block;
+        width: auto;
         margin: 0 auto;
       }
     }
