@@ -103,6 +103,8 @@
 }
 
 .card {
+  position: relative;
+  z-index: 2;
   padding: 25px 25px;
 
   text-align: center;
@@ -421,5 +423,58 @@
     z-index: 2;
     width: 180px;
     height: 180px;
+  }
+}
+
+.bubble {
+  position: absolute;
+  z-index: 1;
+
+  background: radial-gradient(
+    71.17% 76.15% at 20.45% 35.32%,
+    #ffdd8f 3.13%,
+    #e29c00 70.24%,
+    #f3a800 86.45%,
+    #ffbd28 100%
+  );
+  border-radius: 50%;
+  box-shadow: 7px 10px 25px rgba(0, 0, 0, 0.2);
+  transform: matrix(-0.74, 0.67, 0.68, 0.74, 0, 0);
+
+  @include md-block() {
+    display: none;
+  }
+
+  &--big-1 {
+    bottom: -4%;
+    left: 1%;
+    width: 160px;
+    height: 160px;
+  }
+
+  &--big-2 {
+    top: -14%;
+    left: 63%;
+    width: 160px;
+    height: 160px;
+  }
+
+  &--small-1 {
+    top: 7%;
+    left: 8%;
+    width: 42px;
+    height: 42px;
+  }
+  &--small-2 {
+    top: 39%;
+    left: 10%;
+    width: 42px;
+    height: 42px;
+  }
+  &--small-3 {
+    top: 23%;
+    left: 93%;
+    width: 42px;
+    height: 42px;
   }
 }

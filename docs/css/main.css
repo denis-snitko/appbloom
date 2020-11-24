@@ -1066,6 +1066,8 @@ body {
 }
 
 .card {
+  position: relative;
+  z-index: 2;
   padding: 25px 25px;
   text-align: center;
   background-color: #fff;
@@ -1356,6 +1358,54 @@ body {
   height: 180px;
 }
 
+.bubble {
+  position: absolute;
+  z-index: 1;
+  background: -o-radial-gradient(20.45% 35.32%, 71.17% 76.15%, #ffdd8f 3.13%, #e29c00 70.24%, #f3a800 86.45%, #ffbd28 100%);
+  background: radial-gradient(71.17% 76.15% at 20.45% 35.32%, #ffdd8f 3.13%, #e29c00 70.24%, #f3a800 86.45%, #ffbd28 100%);
+  border-radius: 50%;
+  -webkit-box-shadow: 7px 10px 25px rgba(0, 0, 0, 0.2);
+          box-shadow: 7px 10px 25px rgba(0, 0, 0, 0.2);
+  -webkit-transform: matrix(-0.74, 0.67, 0.68, 0.74, 0, 0);
+      -ms-transform: matrix(-0.74, 0.67, 0.68, 0.74, 0, 0);
+          transform: matrix(-0.74, 0.67, 0.68, 0.74, 0, 0);
+}
+
+.bubble--big-1 {
+  bottom: -4%;
+  left: 1%;
+  width: 160px;
+  height: 160px;
+}
+
+.bubble--big-2 {
+  top: -14%;
+  left: 63%;
+  width: 160px;
+  height: 160px;
+}
+
+.bubble--small-1 {
+  top: 7%;
+  left: 8%;
+  width: 42px;
+  height: 42px;
+}
+
+.bubble--small-2 {
+  top: 39%;
+  left: 10%;
+  width: 42px;
+  height: 42px;
+}
+
+.bubble--small-3 {
+  top: 23%;
+  left: 93%;
+  width: 42px;
+  height: 42px;
+}
+
 /* End Base styles */
 
 /* MAIN STYLES */
@@ -1436,6 +1486,7 @@ body {
 }
 
 .s-price {
+  position: relative;
   padding-top: 34px;
   padding-bottom: 116px;
   background-color: #6738d3;
@@ -1443,6 +1494,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  overflow: hidden;
 }
 
 .s-price__row {
@@ -1747,6 +1799,10 @@ body {
   }
 
   .circle {
+    display: none;
+  }
+
+  .bubble {
     display: none;
   }
 
