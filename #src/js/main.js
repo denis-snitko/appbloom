@@ -63,5 +63,6 @@ for (let anchor of anchors) {
       behavior: 'smooth',
       block: 'start'
     })
+    burger.setAttribute('style', 'top: -100%')
   })
 }
