@@ -1002,6 +1002,7 @@ body {
 }
 
 .container {
+  position: relative;
   max-width: 1470px;
   margin: 0 auto;
   padding-left: 15px;
@@ -1139,10 +1140,11 @@ body {
 
 .burger {
   position: absolute;
-  top: -100%;
+  top: -1000%;
   right: 0;
   z-index: 1000;
   width: 100%;
+  height: 100vh;
   text-align: center;
   background-color: #6738d3;
   -webkit-transition: 0.2s ease-in-out;
@@ -1411,9 +1413,11 @@ body {
 /* MAIN STYLES */
 
 .header {
-  position: relative;
+  position: fixed;
   z-index: 3;
+  width: 100%;
   padding: 14px 0;
+  background-color: #3b02ba;
 }
 
 .header__row {

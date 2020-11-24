@@ -37,7 +37,7 @@ burgerOpen.addEventListener('click', () => {
 })
 
 burgerClose.addEventListener('click', () => {
-  burger.setAttribute('style', 'top: -100%')
+  burger.setAttribute('style', 'top: -1000%')
 })
 
 
@@ -63,6 +63,22 @@ for (let anchor of anchors) {
       behavior: 'smooth',
       block: 'start'
     })
-    burger.setAttribute('style', 'top: -100%')
+    burger.setAttribute('style', 'top: -1000%')
   })
 }
+
+
+
+
+
+// let scrolled;
+// window.onscroll = function () {
+//   scrolled = window.pageYOffset || document.documentElement.scrollTop;
+//   if (scrolled > 400) {
+//     $(".header").css({ "background-color": "#3b02ba;" })
+//   }
+//   if (400 > scrolled) {
+//     $(".header").css({ "background-color": "transparent" })
+//   }
+
+// }
