@@ -34,10 +34,12 @@ const burger = document.querySelector('.burger');
 
 burgerOpen.addEventListener('click', () => {
   burger.setAttribute('style', 'top: 0')
+  document.body.setAttribute('style', 'overflow:  hidden')
 })
 
 burgerClose.addEventListener('click', () => {
   burger.setAttribute('style', 'top: -1000%')
+  document.body.setAttribute('style', 'overflow:  auto')
 })
 
 
@@ -64,21 +66,18 @@ for (let anchor of anchors) {
       block: 'start'
     })
     burger.setAttribute('style', 'top: -1000%')
+    document.body.setAttribute('style', 'overflow:  auto')
   })
 }
 
 
+// HEADER BACKGROUND
 
-
-
-// let scrolled;
-// window.onscroll = function () {
-//   scrolled = window.pageYOffset || document.documentElement.scrollTop;
-//   if (scrolled > 400) {
-//     $(".header").css({ "background-color": "#3b02ba;" })
-//   }
-//   if (400 > scrolled) {
-//     $(".header").css({ "background-color": "transparent" })
-//   }
-
-// }
+const header = document.querySelector('.header')
+window.addEventListener('scroll', function (e) {
+  if ((window.scrollY) > 50) {
+    header.setAttribute('style', 'background-color:  #3b02ba')
+  } else {
+    header.setAttribute('style', 'background-color: transparent')
+  }
+});

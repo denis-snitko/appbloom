@@ -1417,7 +1417,9 @@ body {
   z-index: 3;
   width: 100%;
   padding: 14px 0;
-  background-color: #3b02ba;
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 
 .header__row {

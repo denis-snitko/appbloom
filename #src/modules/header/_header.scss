@@ -3,7 +3,8 @@
   z-index: 3;
   width: 100%;
   padding: 14px 0;
-  background-color: #3b02ba;
+
+  transition: all 0.3s linear;
 
   &__row {
     display: flex;
