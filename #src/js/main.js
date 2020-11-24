@@ -75,7 +75,7 @@ for (let anchor of anchors) {
 
 const header = document.querySelector('.header')
 window.addEventListener('scroll', function (e) {
-  if ((window.scrollY) > 50) {
+  if ((window.scrollY) > 30) {
     header.setAttribute('style', 'background-color:  #3b02ba')
   } else {
     header.setAttribute('style', 'background-color: transparent')
