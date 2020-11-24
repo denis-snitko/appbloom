@@ -8,17 +8,35 @@
   background-position: center;
   background-size: cover;
 
+  @include md-block() {
+    padding-bottom: 40px;
+  }
+
   &__row {
     @include row-flex();
+
+    @include md-block() {
+      margin-top: 20px;
+    }
   }
 
   &__col {
     @include col();
     @include size(3);
+    @include size-md(6);
+    @include size-xs(12);
+
+    @include md-block() {
+      margin-bottom: 20px;
+    }
   }
 
   &__title {
     margin-bottom: 24px;
+
+    @include md-block() {
+      margin-bottom: 0;
+    }
   }
 
   &__download {
@@ -45,8 +63,14 @@
         }
       }
     }
-  }
 
-  &__card {
+    @include sm-block() {
+      padding-right: 0;
+      font-size: 16px;
+
+      svg {
+        display: none;
+      }
+    }
   }
 }

@@ -7,6 +7,15 @@
   background-position: center 277px;
   background-size: 30%;
 
+  @include md-block() {
+    padding-top: 38px;
+    padding-bottom: 28px;
+  }
+
+  @include md-block() {
+    background-image: none;
+  }
+
   &__row {
     display: flex;
     justify-content: space-between;
@@ -18,7 +27,13 @@
   }
 
   &__section-descr {
-    width: 580px;
+    width: 100%;
+    max-width: 580px;
     margin-bottom: 76px;
+
+    @include md-block() {
+      max-width: 100%;
+      margin-bottom: 46px;
+    }
   }
 }

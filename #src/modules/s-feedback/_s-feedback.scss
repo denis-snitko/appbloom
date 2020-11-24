@@ -7,6 +7,11 @@
   // background-position: center 164px;
   // background-size: 42%;
 
+  @include md-block() {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
   &__title {
     margin-bottom: 20px;
     color: #3b02ba;
@@ -16,6 +21,11 @@
     width: 100%;
     max-width: 475px;
     margin-bottom: 66px;
+
+    @include md-block() {
+      max-width: 100%;
+      margin-bottom: 36px;
+    }
   }
 
   .flex-justify {
@@ -36,6 +46,14 @@
 
   border-radius: 10px;
 
+  @include md-block() {
+    padding: 30px 60px;
+  }
+
+  @include sm-block() {
+    padding: 30px;
+  }
+
   &__title {
     margin-bottom: 39px;
     font-weight: 700;
@@ -43,6 +61,11 @@
     line-height: 44px;
 
     color: #ffffff;
+
+    @include sm-block() {
+      font-size: 25px;
+      line-height: 36px;
+    }
   }
 
   label {

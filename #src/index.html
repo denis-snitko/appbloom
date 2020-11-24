@@ -10,6 +10,20 @@
 </head>
 
 <body>
+    <nav class="burger">
+        <div class="burger__close">
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="burger__list">
+            <li class="burger__item"><a href="#" class="burger__link">Возможности</a></li>
+            <li class="burger__item"><a href="#" class="burger__link">Цены</a></li>
+            <li class="burger__item"><a href="#" class="burger__link">Преимущества</a></li>
+            <li class="burger__item"><a href="#" class="burger__link">Примеры работ</a></li>
+            <li class="burger__item"><a href="#" class="burger__link">Обратная связь</a></li>
+            <li class="burger__item"><a href="#" class="burger__link">Партнерская программа</a></li>
+        </ul>
+    </nav>
     <div class="main-body">
         @@include('modules/header/_header.html')
         @@include('modules/hero/_hero.html')
@@ -17,7 +31,7 @@
             @@include('modules/s-possibility/_s-possibility.html')
             @@include('modules/s-price/_s-price.html')
             @@include('modules/s-advantages/_s-advantages.html')
-            @@include('modules/s-examples/_s-examples.html')
+            <!-- @@include('modules/s-examples/_s-examples.html') -->
             @@include('modules/s-feedback/_s-feedback.html')
             @@include('modules/s-partnership/_s-partnership.html')
         </div>

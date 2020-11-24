@@ -7,9 +7,51 @@
   background-position: top center;
   background-size: cover;
 
+  @include sm-block() {
+    padding-bottom: 10px;
+  }
+
   &__row {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @include md-block() {
+      flex-wrap: wrap;
+    }
+
+    &--copyright {
+      @include sm-block() {
+        justify-content: center;
+
+        .footer__col {
+          width: 100%;
+          margin-bottom: 6px;
+        }
+      }
+    }
+  }
+
+  &__col {
+    &--logo {
+      @include md-block() {
+        width: 100%;
+        margin-bottom: 18px;
+        text-align: center;
+      }
+    }
+
+    &--social {
+      @include md-block() {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  }
+
+  &__menu {
+    @include md-block() {
+      display: none;
+    }
   }
 }

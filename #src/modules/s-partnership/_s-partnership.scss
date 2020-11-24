@@ -7,6 +7,16 @@
   background-position: 962px 68px;
   background-size: 33%;
 
+  @include xl-block() {
+    padding-bottom: 125px;
+    background-position: 662px 88px;
+  }
+
+  @include md-block() {
+    padding-bottom: 0;
+    background-image: none;
+  }
+
   &__title {
     margin-bottom: 21px;
     color: #3b02ba;
@@ -16,5 +26,9 @@
     width: 100%;
     max-width: 600px;
     margin-bottom: 23px;
+
+    @include md-block() {
+      max-width: 100%;
+    }
   }
 }

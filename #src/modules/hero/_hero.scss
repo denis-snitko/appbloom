@@ -12,15 +12,30 @@
   background-size: cover;
 
   &__title {
+    width: 100%;
     max-width: 760px;
     margin-top: 30px;
     margin-bottom: 18px;
+
+    @include md-block() {
+      max-width: 500px;
+    }
+
+    @include sm-block() {
+      margin-top: 0px;
+      margin-bottom: 5px;
+    }
   }
 
   &__section-descr {
-    width: 383px;
+    width: 100%;
+    max-width: 383px;
     margin-bottom: 38px;
 
     color: #ffffff;
+
+    @include sm-block() {
+      margin-bottom: 25px;
+    }
   }
 }
