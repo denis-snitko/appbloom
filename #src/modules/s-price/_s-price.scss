@@ -26,8 +26,12 @@
   &__col {
     @include col();
     @include size(3);
-    @include size-md(6);
+    @include size-xl(6);
     @include size-xs(12);
+
+    @include xl-block() {
+      margin-bottom: 20px;
+    }
 
     @include md-block() {
       margin-bottom: 20px;
